@@ -8,7 +8,7 @@
     <style>
         body {
             height: 100vh;
-            width: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,6 +20,20 @@
             background-color: #CCC;
             width: 100vmin;
             height: 100vmin;
+            display: grid;
+            grid-template-rows: repeat(21, 1fr);
+            grid-template-columns: repeat(21, 1fr);
+        }
+
+        .snake {
+            background-color: #176108;
+            border: .25vm solid #0F0C0C;
+
+        }
+
+        .food {
+            background-color: #e3ed2a;
+            border: .25vm solid #0F0C0C;
         }
 
     </style>
