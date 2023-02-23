@@ -15,7 +15,10 @@ const gameBoard = document.getElementById("game-board");
 
 function main(currentTime) {
   if (gameOver) {
-    return alert("U R Ded");
+    if (confirm("U R DeD. Press ok to restart")) {
+      window.location = "/";
+    }
+    return;
   }
 
   window.requestAnimationFrame(main);
